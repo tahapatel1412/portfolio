@@ -117,7 +117,7 @@ ul{list-style:none}
 .veille-tool-item{display:flex;gap:16px;padding:14px 0;border-top:1px solid #2d3238}
 .veille-tool-item i{width:24px;margin-top:4px;color:var(--or);font-size:1.2rem}
 .veille-tool-item p{color:#aab1b9;font-size:.92rem}
-/* E4 */
+/* E5 */
 .table-responsive{overflow-x:auto;background:var(--card);border-radius:var(--r)}
 .synthesis-table{width:100%;min-width:860px;border-collapse:collapse;font-size:.95rem}
 .synthesis-table th{padding:14px 16px;background:var(--ink);color:#fff;text-align:left;font-weight:600}
