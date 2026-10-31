@@ -1,0 +1,35 @@
+/* ajouts.css — à charger APRÈS style.css */
+::selection{background:var(--or);color:#000}
+
+/* barre "câble" sous chaque titre de section */
+.section-title::after{content:"";display:block;width:72px;height:6px;margin-top:18px;background:var(--cable)}
+
+/* menu : 10 liens, on resserre un peu */
+@media(min-width:1101px) and (max-width:1280px){.nav-links a{padding:8px 7px;font-size:.84rem}}
+
+/* CV */
+.cv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px}
+.info-card{--c:var(--or);padding:28px;background:var(--card);border-radius:var(--r);border-top:6px solid var(--c)}
+.info-card:nth-child(4n+2){--c:var(--blue)}
+.info-card:nth-child(4n+3){--c:var(--green)}
+.info-card:nth-child(4n){--c:var(--brown)}
+.info-card h3{display:flex;align-items:center;gap:10px;margin-bottom:14px;font:700 1.25rem var(--display);color:#000}
+.info-card h3 i{color:var(--c)}
+.info-card p{margin-bottom:10px;color:var(--mute)}
+.cv-contact{display:grid;gap:6px;margin-top:14px;color:var(--text)}
+.cv-contact i{width:20px;color:var(--or-ink)}
+
+/* Orange / ScholaNova */
+.org-grid{display:grid;grid-template-columns:320px 1fr;gap:64px;align-items:start}
+.org-logo-box{--c:var(--or);display:grid;justify-items:center;gap:20px;padding:40px 28px;background:var(--card);border-radius:var(--r);box-shadow:10px 10px 0 var(--c);text-align:center}
+#scholanova .org-logo-box{--c:var(--blue)}
+.org-logo-img{display:block;max-width:100%;max-height:120px;width:auto;height:auto;object-fit:contain}
+.org-caption{font-size:.92rem;color:var(--mute)}
+.org-text{--c:var(--or)}
+#scholanova .org-text{--c:var(--blue)}
+.org-text p{max-width:62ch;margin-bottom:16px}
+.org-text h3{margin:28px 0 10px;font:700 1.3rem var(--display);color:#000}
+@media(max-width:860px){.org-grid{grid-template-columns:1fr;gap:40px}.org-logo-box{max-width:320px}}
+
+/* photo de profil (si tu remplaces le placeholder par une <img>) */
+.about-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);box-shadow:10px 10px 0 var(--or)}
